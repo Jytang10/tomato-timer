@@ -4,7 +4,7 @@
 
 const START_TIMER = 'START_TIMER';
 const RESTART_TIMER = 'RESTART_TIMER';
-const ADD_SECONDS = 'ADD_SECOND';
+const ADD_SECOND = 'ADD_SECOND';
 
 // Action Creators
 
@@ -42,7 +42,7 @@ function reducer(state = initialState, action) {
       return applyStartTimer(state, action);
     case RESTART_TIMER:
       return applyRestartTimer(state);
-    case ADD_SECONDS:
+    case ADD_SECOND:
       return applyAddSecond(state);
     default:
       return state;
