@@ -80,4 +80,12 @@ function applyAddSecond(state){
 
 // Export Action Creators
 
+const actionCreators = {
+  startTimer,
+  restartTimer,
+  addSecond
+}
+
 // Export Reducer
+
+export default reducer;
