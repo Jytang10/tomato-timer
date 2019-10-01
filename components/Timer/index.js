@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, StatusBar } from 'react-native';
 
 class Timer extends Component {
   render() {
     return (
       <View style={styles.container}>
+        <StatusBar barStyle={"light-content"}></StatusBar>
         <View style={styles.upper}>
           <Text style={styles.time}>25:00</Text>
         </View>
@@ -22,7 +23,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#CE0B24"
   },
   upper: {
-    flex:1,
+    flex:2,
     justifyContent:"center",
     alignItems: "center"
   },
@@ -31,7 +32,11 @@ const styles = StyleSheet.create({
     justifyContent:"center",
     alignItems: "center"
   },
-  time: {}
+  time: {
+    color:"white",
+    fontSize:120,
+    fontWeight:"100"
+  }
 }); 
 
 export default Timer;
