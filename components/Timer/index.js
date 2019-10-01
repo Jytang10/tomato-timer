@@ -11,8 +11,8 @@ class Timer extends Component {
           <Text style={styles.time}>25:00</Text>
         </View>
         <View style={styles.lower}>
-          <Button iconzName=""></Button>
-          <Button iconzName=""></Button>
+          <Button iconName="play-circle" onPress={() => alert("it works!")}></Button>
+          <Button iconName="stop-circle" onPress={() => alert("it works!")}></Button>
         </View>
       </View>
     )
